@@ -1,0 +1,29 @@
+<!--=== Top ===-->    
+
+<!--=== Content Part ===-->
+<div class="container blog-full-width">		
+    <!--Blog Post-->        
+	<div class="blog margin-bottom-40">
+        <div class="blog-img">
+            <img class="img-responsive" src="assets/img/sliders/revolution/bg8.jpg" alt="">
+        </div>
+    	<h2><a href="blog_item_option1.html">{{ page.title }}</a></h2>
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="icon-calendar"></i>{{ page.date }}</li>
+                <li><i class="icon-pencil"></i>Author</li>
+                <li><i class="icon-comments"></i> <a href="#">Number of Comments</a></li>
+                <li><i class="icon-tags"></i> 
+                    {% for tag in page.tags %}
+                       <a href="{{ site.url }}/tags.html#{{ tag }}-ref">{{ tag }}</a> 
+                    {% endfor %}
+                </li>
+            </ul>                    
+        </div>
+        <p>{{ content }}</p>
+        <!--p><a class="btn-u btn-u-small" href="blog_item_option2.html"><i class="icon-plus-sign"></i> Read More</a></p-->
+    </div>
+    <!--End Blog Post-->        
+
+</div><!--/container-->		
+<!--=== End Content Part ===-->

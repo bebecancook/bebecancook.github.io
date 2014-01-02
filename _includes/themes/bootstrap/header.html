@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="{{ ASSET_PATH }}/plugins/parallax-slider/css/parallax-slider.css">
     <!-- CSS Theme -->    
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/themes/default.css" id="style_color">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pages/page_magazine.css">
     <!-- This is missing in the normal version link rel="stylesheet" href="{{ ASSET_PATH }}/css/themes/headers/default.css" id="style_color-header-1"-->    
 
     <!-- Le fav and touch icons -->
@@ -92,7 +93,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand">
                     <img id="logo-header" src="{{ ASSET_PATH }}/img/logo1-default.png" alt="Logo">
                 </a>
             </div>
@@ -101,13 +102,9 @@
             <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                        <a href={{ site.production_url }} class="dropdown-toggle" data-hover="dropdown">
                             Home
-                            <i class="icon-angle-down"></i>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li class="active"><a href="index.html">Default Home Page</a></li>
-                        </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
@@ -118,41 +115,6 @@
                              {% assign pages_list = site.pages %}
                              {% assign group = 'navigation' %}
                              {% include JB/pages_list %}
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                            Features
-                            <i class="icon-angle-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="feature_grid.html">Grid Layout</a></li>
-                            <li><a href="feature_boxes.html">Content Boxes</a></li>
-                            <li><a href="feature_typography.html">Typography</a></li>
-                            <li><a href="feature_tagline_boxes.html">Tagline Boxes</a></li>
-                            <li><a href="feature_buttons.html">Buttons</a></li>
-                            <li><a href="feature_icons.html">Icons</a></li>
-                            <li><a href="feature_thumbails.html">Thumbails</a></li>
-                            <li><a href="feature_components.html">Components</a></li>
-                            <li><a href="feature_accardion_and_tabs.html">Accardion and Tabs</a></li>
-                            <li><a href="feature_navigations.html">Navigations</a></li>
-                            <li><a href="feature_tables.html">Tables</a></li>
-                            <li><a href="feature_forms.html">Forms</a></li>
-                            <li><a href="feature_testimonials.html">Testimonials</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                            Portfolio
-                            <i class="icon-angle-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="portfolio_text_blocks.html">Portfolio Text Blocks</a></li>
-                            <li><a href="portfolio_2_column.html">Portfolio 2 Columns</a></li>
-                            <li><a href="portfolio_3_column.html">Portfolio 3 Columns</a></li>
-                            <li><a href="portfolio_4_column.html">Portfolio 4 Columns</a></li>
-                            <li><a href="portfolio_item.html">Portfolio Item Option 1</a></li>
-                            <li><a href="portfolio_item1.html">Portfolio Item Option 2</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
