@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: homepage
 title: Bébé Can Cook
 tagline: And the cooking is real nice
 ---
